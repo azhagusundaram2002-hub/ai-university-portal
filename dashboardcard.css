@@ -1,0 +1,40 @@
+.dashboard-card {
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dashboard-card-value {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+/* Background Colors */
+
+.blue {
+  background-color: #2563eb;
+}
+
+.green {
+  background-color: #16a34a;
+}
+
+.purple {
+  background-color: #9333ea;
+}
+
+.orange {
+  background-color: #ea580c;
+}

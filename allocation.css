@@ -1,0 +1,157 @@
+.home {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fc;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 35px;
+}
+
+/* Header */
+
+.allocation-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.allocation-header h1{
+
+font-size:32px;
+
+color:#1f2937;
+
+}
+
+.allocation-header button{
+
+padding:12px 25px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:16px;
+
+}
+
+.allocation-header button:hover{
+
+background:#1d4ed8;
+
+}
+
+/* Table */
+
+.allocation-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+border-radius:12px;
+
+overflow:hidden;
+
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.allocation-table th{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px;
+
+}
+
+.allocation-table td{
+
+padding:15px;
+
+text-align:center;
+
+border-bottom:1px solid #eee;
+
+}
+
+.allocation-table tr:hover{
+
+background:#f8fafc;
+
+}
+
+/* Status */
+
+.allocated{
+
+background:#16a34a;
+
+color:white;
+
+padding:5px 15px;
+
+border-radius:20px;
+
+}
+
+.waiting{
+
+background:#dc2626;
+
+color:white;
+
+padding:5px 15px;
+
+border-radius:20px;
+
+}
+
+@media(max-width:900px){
+
+.main-content{
+
+margin-left:0;
+
+padding:20px;
+
+}
+
+.allocation-header{
+
+flex-direction:column;
+
+gap:20px;
+
+align-items:flex-start;
+
+}
+
+.allocation-table{
+
+display:block;
+
+overflow-x:auto;
+
+}
+
+}

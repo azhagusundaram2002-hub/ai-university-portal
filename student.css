@@ -1,0 +1,100 @@
+/* Page Layout */
+
+.home {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 40px;
+}
+
+/* Heading */
+
+.main-content h1 {
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+/* Form Container */
+
+.student-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Inputs */
+
+.student-form input,
+.student-form select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.student-form input:focus,
+.student-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+/* Submit Button */
+
+.student-form button {
+  grid-column: span 2;
+
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.student-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .student-form {
+    grid-template-columns: 1fr;
+  }
+
+  .student-form button {
+    grid-column: span 1;
+  }
+}
+.course-section {
+    grid-column: 1 / -1;
+}
+
+.course-section .form-group {
+    width: 100%;
+}
